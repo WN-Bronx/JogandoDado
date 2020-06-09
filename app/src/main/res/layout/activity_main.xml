@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pg_fundo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"
+        tools:context="br.com.fake.steam.LoginActivity">
+
+        <TextView
+            android:id="@+id/tViewJogarDado"
+            android:hint="@string/jodardado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOGUE O DADO"
+            android:textSize="25sp"
+            android:textColor="#EEE"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/iViewDado"
+            android:contentDescription="@string/dado"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/dice_1" />
+
+        <Button
+            android:id="@+id/btnJogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pg_button"
+            android:text="@string/joguedado"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:onClick="jogarDado"
+        />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JogandoDado</string>
+    <string name="joguedado">JOGAR</string>
+    <string name="dado">dado</string>
+    <string name="SimuladorDado">Simulado de Dado</string>
+    <string name="jodardado">JogarDado</string>
+</resources>
